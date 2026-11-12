@@ -27,14 +27,19 @@ func main() {
 		Price:    300,
 		Quantity: 9,
 	}
+	fmt.Println("__________go data -to-json_______")
+
 	data, _ := json.Marshal(electronic)
 
 	fmt.Println(data)
-	fmt.Print(string(data))
+	fmt.Println(string(data))
+
+	fmt.Println("__________json -to- go data_______")
 
 	json_data := data
 
 	var product_1 Product
+	fmt.Println(product_1)
 	err := json.Unmarshal(json_data, &product_1)
 
 	if err != nil {
