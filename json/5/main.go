@@ -47,4 +47,11 @@ func main() {
 	fmt.Println(irfan_json)
 	fmt.Println(string(irfan_json))
 
+	//------convert go data of irfan into json using marchal----
+
+	irfan_json_data, err := json.Marshal(Irfan)
+	fmt.Println("______converting irfan data to json using marchal_____")
+	fmt.Println(string(irfan_json_data))
+	fmt.Println(irfan_json_data)
+
 }
