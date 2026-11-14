@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 )
@@ -53,5 +54,9 @@ func main() {
 	fmt.Println("______converting irfan data to json using marchal_____")
 	fmt.Println(string(irfan_json_data))
 	fmt.Println(irfan_json_data)
+
+	//---comparing json data we used as output with irfan json data--
+
+	fmt.Print(bytes.Equal(json_data, irfan_json_data))
 
 }
