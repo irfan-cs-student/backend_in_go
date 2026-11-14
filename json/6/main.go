@@ -11,7 +11,7 @@ type Discription struct {
 	Processor string
 }
 type product struct {
-	Name    string
+	Product string
 	Price   int
 	Details Discription
 }
